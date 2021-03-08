@@ -1,0 +1,33 @@
+<!-- LOADER -->
+<!-- <div id="preloader">
+  <div class="loader">
+    <img src="../assets/images/loader.gif" alt="#" />
+  </div>
+</div> -->
+<!-- END LOADER -->
+<div class="wrapper">
+  <nav id="sidebar">
+    <div class="menu_section">
+      <ul>
+        <li>
+          <a routerLink="/">Home</a>
+        </li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/service">Services</a></li>
+        <li><a routerLink="/contact">Contact us</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/course">Khóa học</a></li>
+        <li><a routerLink="/profile">Profile</a></li>
+        <li><a routerLink="/admin">Admin</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="content">
+    <!--start header-->
+    <app-header></app-header>
+    <!-- End header -->
+    <!--section-->
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+</div>

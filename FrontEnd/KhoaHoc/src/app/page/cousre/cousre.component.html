@@ -1,0 +1,52 @@
+<div class="section contact_section" style="margin-top: 120px">
+  <div class="container-fluid">
+    <div class="title">
+      <h1>KHÓA HỌC TIÊU BIỂU</h1>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="row" id="ads">
+          <!-- Category Card -->
+
+          <div class="col-md-4" *ngFor="let i of listCoures">
+            <div class="card rounded">
+              <div class="card-image">
+                <span class="saleoff">{{i.sale}}%</span>
+                <img
+                  class="img-fluid"
+                  src={{i.image}}
+                  alt="Alternate Text"
+                />
+              </div>
+              <div class="card-image-overlay m-auto">
+                <div class="ad-title m-auto">
+                  <p>{{ i.teacher }}</p>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <div class="ad-title m-auto">
+                  <h5>{{ i.name }}</h5>
+                </div>
+                <a class="ad-btn" routerLink="../detail-course/{{i.id}}">View</a>
+                <p>{{ i.price | currency}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Page navigation example" style="margin-bottom: 20px">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Pre</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end section -->
+  </div>
+</div>
